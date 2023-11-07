@@ -3,7 +3,7 @@
 
 cmake_minimum_required(VERSION 3.19.0 FATAL_ERROR)
 
-set(MBED_PATH ${CMAKE_CURRENT_SOURCE_DIR}/mbed-dev CACHE INTERNAL "")
+set(MBED_PATH ${CMAKE_CURRENT_SOURCE_DIR}/mbed-os CACHE INTERNAL "")
 set(MBED_CONFIG_PATH ${CMAKE_CURRENT_BINARY_DIR} CACHE INTERNAL "")
 set(APP_TARGET spine0)
 
@@ -22,7 +22,7 @@ target_sources(${APP_TARGET}
 
 target_link_libraries(${APP_TARGET}
     PRIVATE
-        mbed-dev
+        mbed-os
 )
 
 mbed_set_post_build(${APP_TARGET})
