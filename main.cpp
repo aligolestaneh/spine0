@@ -5,6 +5,8 @@
 #include <cstring>
 #include "leg_message.h"
 
+#include "/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE/device/stm32f446xx.h"
+
 // length of receive/transmit buffers
 #define RX_LEN 66
 #define TX_LEN 66
